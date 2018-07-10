@@ -13,7 +13,7 @@ install:
   - go install -race -v ./...
 
 script:
-  - go vet inject.go
-  - $HOME/gopath/bin/golint inject.go
+  - go vet goject.go
+  - $HOME/gopath/bin/golint goject.go
   - go test -cpu=2 -race -v ./...
   - go test -cpu=2 -covermode=atomic ./...
